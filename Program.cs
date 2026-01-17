@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello World!");
-Console.WriteLine("Welcome to my first C# program.");
+
+Console.WriteLine("\n Hello World!");
+Console.WriteLine("Welcome to my first C# program. \n");
 
 // String firstName = "   Chris   ";
 // String lastName = "    Utom ";
