@@ -1,25 +1,26 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿ using System;
+ using System.Linq;
+ using System.Collections.Generic;
+ using System.Globalization;
 
-Console.WriteLine("\n Hello World!");
-Console.WriteLine("Welcome to my first C# program. \n");
+// See https://aka.ms/new-console-template for more information
 
-// String firstName = "   Chris   ";
-// String lastName = "    Utom ";
+using System.ComponentModel;
+using System.Threading.Tasks.Dataflow;
 
-// Console.WriteLine($"His name is {firstName.Trim()} {lastName.TrimStart()}");
-// Console.WriteLine($"His name is {firstName} {lastName}");
 
-// firstName = firstName.Trim();
-// lastName = lastName.TrimStart();
+string name = "My name is Moses Ette";
+string helloWorld = "\nHello World \n";
+Console.WriteLine(helloWorld.ToUpper());
 
-// Console.WriteLine($"His name is {firstName} {lastName}");
-// String name = $"{firstName} {lastName}";
+ TextInfo textInfo = CultureInfo.CurrentCulture.TextInfo; // Create a TextInfo object based on the current culture
 
-// Console.WriteLine(name.Contains("Ette"));
-// Console.WriteLine(name.Contains("Chris"));
+string aboutMe = $@"I am {textInfo.ToTitleCase(name)},a software development student with a strong foundation in full‑stack web development and computer programming. 
+I have earned BYU–Idaho certificates in frontend development, backend development, and programming, giving me hands-on experience building responsive user interfaces, server-side applications, and clean, maintainable code. 
+I am passionate about solving real-world problems through technology and continually expanding my skillset as I work toward becoming a well‑rounded software engineer.\n";
 
-// Console.WriteLine(name.Replace("Chris", "Bestie"));
-// Console.WriteLine(name.Contains("Chris"));
-// name = name.Replace("Chris", "Bestie");
-// Console.WriteLine(name.Contains("Chris"));
+Console.WriteLine($"{aboutMe}\n");
+
+
+
 
