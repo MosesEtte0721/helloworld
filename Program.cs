@@ -5,8 +5,6 @@
 
 // See https://aka.ms/new-console-template for more information
 
-using System.ComponentModel;
-using System.Threading.Tasks.Dataflow;
 
 
 string name = "My name is Moses Ette";
